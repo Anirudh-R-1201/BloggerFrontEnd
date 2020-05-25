@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3" *ngFor = "let item of list">
+        <div class="col-3" *ngFor = "let item of list | async">
 
 <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title>{{item.title}}</mat-card-title>
-      <mat-card-subtitle>{{item.subtite}}</mat-card-subtitle>
+      <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src='{{item.imageUrl}}' alt="Photo of a Shiba Inu">
     <mat-card-content>

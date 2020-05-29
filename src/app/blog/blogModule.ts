@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {PostsModule} from './posts/postsModule';
-import {ConfirmationDialogComponent} from './dialogs/xonfirmationDialogComponent';
-import {CommonMaterialModules} from '../common/material/xommonMaterialModules';
+import {ConfirmationDialogComponent} from './dialogue/confirmDialogueComponent';
+import {CommonMaterialModules} from '../common/material/commonMaterialModules';
 import {RouterModule} from '@angular/router';
 import {BlogRouting} from './blogRouting';
-import {BlogGuard} from './guards/BlogGuard';
+import {BlogGuard} from './guards/blogGuard';
 
 @NgModule({
     imports: [

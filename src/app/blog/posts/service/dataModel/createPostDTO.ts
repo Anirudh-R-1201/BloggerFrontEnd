@@ -1,6 +1,6 @@
-export interface PostListItem {
+export interface CreatePostDto {
     title: string;
-    subtitle: string;
+    subTitle: string;
     imageUrl: string;
     content: string;
 }

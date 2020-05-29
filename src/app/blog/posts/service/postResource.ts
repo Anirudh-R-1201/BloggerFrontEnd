@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import  {ApiConfig} from '../apiConfig';
+import  {ApiConfig} from '../../apiConfig';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {PostListItem} from './dataModel/postModel';

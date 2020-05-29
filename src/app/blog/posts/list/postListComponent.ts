@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { PostService } from '../service/postService';
-import { PostListItem } from '../service/dataModel/postModel';
+import { CreatePostDto } from '../service/dataModel/createPostDTO';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,9 +10,9 @@ import { Observable } from 'rxjs';
 })
 
 export class  PostListComponent  implements OnInit{
-    public list: Observable<PostListItem[]>;
+    public list: Observable<CreatePostDto[]>;
     constructor(private postService: PostService){}
     ngOnInit(){
-        this.list = this.postService.getAllPostItem();
+        this.list = this.postService.getAllPostItems();
     }
 }
